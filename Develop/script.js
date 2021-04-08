@@ -4,6 +4,15 @@ var generateBtn = document.querySelector('#generate');
 function generatePassword() {
   var passwordLength = Number(window.prompt('Please select the length of your password (8 to 128 characters).'));
 
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert('Password must be between 8 and 128 characters. Please try again');
+    return null
+  }
+  if (isNaN(passwordLength)) {
+    alert('Please input a number between 8 and 128 for the length of your password.');
+    return null
+  }
+
   var uppercase, lowercase, numbercount, specialOption = false;
   var letters = 'abcdefghijklmnopqrstuvwxyz'
   var numeric = '0123456789'
@@ -27,6 +36,11 @@ function generatePassword() {
   }
   if (specialOption === true) {
     userPassword += specialCharacter
+  }
+
+  if (uppercase === false && lowercase === false && numbercount === false && specialOption === false) {
+    alert('You must select at least one option. Please try again')
+    return null
   }
 
   var genPassword = ''
