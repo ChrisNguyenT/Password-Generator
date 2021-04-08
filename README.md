@@ -12,9 +12,9 @@ https://thangnt336.github.io/Password-Generator/
 
 ## Usage
 
-![first screenshot](assets/screen1.png)
-![second screenshot](assets/screen2.png)
-![third screenshot](assets/screen3.png)
+![first screenshot](Assets/screen1.png)
+![second screenshot](Assets/screen2.png)
+![third screenshot](Assets/screen3.png)
 
 
 
